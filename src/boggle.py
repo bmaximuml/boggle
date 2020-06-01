@@ -40,5 +40,9 @@ def boggle_cli(seed):
     click.echo(tabulate(table, tablefmt="fancy_grid"))
 
 
+def boggle_web(seed=None):
+    return _boggle(seed)
+
+
 if __name__ == "__main__":
     boggle_cli()
